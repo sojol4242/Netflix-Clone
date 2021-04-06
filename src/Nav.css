@@ -1,0 +1,36 @@
+ .Nav{ 
+   height: 100px; 
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 1;
+   transition: all .5s ease-in;
+ }
+ .nav_black{
+   background-color: #111;
+ }
+ .Nav_Content{
+   display: flex;
+   /* align-items: center; */
+   justify-content: space-between;
+  
+ 
+
+ }
+.Nav_Content> a >img{
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left:0;
+  object-fit: contain;
+}
+ 
+.Nav_Content .avatar{
+  border: 1px solid white;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  right: 20px;
+  margin: 30px 0;
+  
+}
