@@ -1,5 +1,7 @@
 import axios from './axios';
 import React, { useEffect, useState } from 'react';
+import PlayArrowIcon from '@material-ui/icons/PlayArrow';
+import FormatListBulletedIcon from '@material-ui/icons/FormatListBulleted';
 import './banner.css';
 import requests from './Request'
 const Banner = () => {
@@ -56,8 +58,8 @@ const Banner = () => {
           <div className="banner-contents">
              <h1 className="banner-title">{movie?.title || movie.name || movie.original_name}</h1>
              <div className="banner-buttons">
-                 <button className="banner-btn">Play</button>
-                 <button className="banner-btn">Movie List</button>
+               <button className="banner-btn"><PlayArrowIcon className="btn-icon"/>Play</button> 
+                  <button className="banner-btn"> <FormatListBulletedIcon className="btn-icon"/> Movie List</button> 
              </div>
              <h1 className="banner-des">
                 { truncate(`Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fugit accusamus  

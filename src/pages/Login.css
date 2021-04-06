@@ -1,0 +1,121 @@
+ .login{
+     position: relative;
+     background: url(https://cdn.hipwallpaper.com/i/98/21/dUyCkp.jpg);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     height:100vh;
+     
+ }
+ .login_gradient{
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.452);
+    background-image: linear-gradient(to top, 
+    rgba(0, 0, 0, 0.0)0,
+    rgba(0, 0, 0, 0)60%,
+    rgba(0, 0, 0, 0.8)100%,   
+    );
+}
+
+
+ .login_logo{
+     position: absolute;   
+     left: 0;
+     width:150px;
+     object-fit: contain;
+     padding-left: 20px;
+    
+ }
+ .login_nav> button{
+     position: absolute;  
+     background-color: #e50914;
+     right: 20px; 
+     top: 10px;
+     font-weight: 600;
+     color: #fff;
+     padding: 10px 20px;
+     border: none;
+          
+ }
+ .login_nav> button:hover{
+    
+    color: #fff;
+    border: 1px solid #fff;
+ }
+
+ .login_input>button{
+  
+    background-color: #e50914;
+    
+    font-weight: 600;
+    color: #fff;
+    padding: 17px 25px;
+    border: none;
+ }
+ .login_input>button:hover{
+     background-color: #e50914;
+ }
+ .login_content{
+  z-index: 1;
+  color: #fff;
+  padding: 20px 100px;
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  
+ 
+   
+ }
+ .login_content>h1{
+     font-size: 3.214rem;
+     margin-bottom:20px;
+  
+ }
+ .login_content>h4{
+     font-size: 2rem;
+     font-weight: 400;
+
+ }
+ .login_content>h3{
+     font-size: 1.5rem;
+     font-weight: 300;
+ 
+
+ 
+ }
+ 
+ .login_input{
+     display: flex;
+     justify-content: center;
+     margin: 1rem 0;
+     align-items: center;
+     flex-wrap: wrap;
+
+    
+ }
+  #filled-basic{
+    background: #fff;
+    
+    border-radius:3px;
+    max-width: 45vw;
+    width: 400px;
+    
+    
+}
+   .login_input>label{
+       color: #fff;
+   }
+
+   /* 
+   .login_nav{
+    position: fixed;
+    height: 75px;
+    background: #111;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+   */

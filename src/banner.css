@@ -35,9 +35,18 @@
     
 }
 
-.banner-fadeBottom{
+/* .banner-fadeBottom{
     height: 8.4rem;
     background: linear-gradient(180deg,transparent,rgba(37,37,37,.61),#111);
+} */
+
+/* .btn-div{
+    display: flex;
+    align-items: center;
+} */
+.banner-buttons{
+    display: flex;
+    flex-wrap: wrap;
 }
 .banner-btn{
     cursor: pointer;
@@ -45,16 +54,26 @@
     outline: none;
     border: none;
     font-weight: 700;
+
     border-radius: .4vw;
     padding: .5rem 2rem;
     margin-right: 1rem;
     background-color: rgba(51,51,51,.5);
+    display: flex;
+    align-items: center;
+    
+   
+     
      
 }
 .banner-btn:hover{
     color: #111;
     background: rgb(216, 213, 213);
     transition: all .3s;
+}
+.btn-icon{
+   padding-right:5px;
+
 }
 /* .banner img{
     height: 1600px;
