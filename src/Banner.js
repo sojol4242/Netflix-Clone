@@ -57,6 +57,11 @@ const Banner = () => {
         }>
           <div className="banner-contents">
              <h1 className="banner-title">{movie?.title || movie.name || movie.original_name}</h1>
+             <div className="more-info">           
+                 <h2 className="release_date">Release Date : <small>{movie?.release_date}</small> </h2>
+                 <h2>Popularity : <small>{movie?.popularity}</small></h2>
+                 <h2 className="vote">Rating : <small>{movie?.vote_average}</small></h2>
+             </div>
              <div className="banner-buttons">
                <button className="banner-btn"><PlayArrowIcon className="btn-icon"/>Play</button> 
                   <button className="banner-btn"> <FormatListBulletedIcon className="btn-icon"/> Movie List</button> 

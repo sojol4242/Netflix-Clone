@@ -1,4 +1,4 @@
-import {  Button, TextField } from '@material-ui/core';
+import {  Button,  TextField } from '@material-ui/core';
 import React, { useState } from 'react';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
  import './Login.css'
@@ -8,14 +8,14 @@ const Login = () => {
     
     const [signIn,setSignIn]=useState(false);
 
+    
+
     return (
         <div className="login">
-           <div className="login_nav">
-                <img className="login_logo" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt="netflix-logo"/> 
-
+           <div className="login_nav">             
+                <a href="home"><img className="login_logo" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt="netflix-logo"/></a>
                 <Button onClick={()=>setSignIn(true)} className="login-btn">
-                                    Sign in
-                      </Button>
+                                    Sign in</Button>
 
                
            </div>
@@ -26,18 +26,18 @@ const Login = () => {
                ) : (
                 <>
                 <h1>Unlimited movies, TV shows, and more.</h1>
-                 <h4>  Unlimited movies, TV shows, and more.</h4>
-               <h3> Watch anywhere. Cancel anytime.
+                 <h4> Watch anywhere. Cancel anytime.</h4>
+               <h3> 
        Ready to watch? Enter your email to create or restart your membership.</h3>
-       <div className="login_input">
-           <div className="input-field">
-           <TextField id="filled-basic" type="email" label="Email Address" variant="filled" />
-           </div>
-           
-            <Button className="login-btn" onClick={()=>setSignIn(true)} >Get Started  <ChevronRightIcon/></Button>
+           <div className="login_input">
+                  <div className="input-field">
+                     <TextField id="filled-basic" name="email" type="email" label="Email Address" variant="filled" />
+                     <Button className="login-btn" onClick={()=>setSignIn(true)} >Get Started  <ChevronRightIcon/></Button>
+                  </div>
+                   
             </div>
                 </>
-
+               
                )}
              
            </div>

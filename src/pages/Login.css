@@ -1,15 +1,17 @@
  .login{
      position: relative;
-     background: url(https://cdn.hipwallpaper.com/i/98/21/dUyCkp.jpg);
+     background: url(https://assets.nflxext.com/ffe/siteui/vlv3/92bb3a0b-7e91-40a0-b27b-f2c3ac9ef6e4/97f2239d-63be-4527-99bf-7b4f5c9910c3/BD-en-20210322-popsignuptwoweeks-perspective_alpha_website_small.jpg);
      background-position: center;
      background-size: cover;
      background-repeat: no-repeat;
-     height:100vh;
+     background-attachment: fixed;
+     height: 650px;
+     
      
  }
  .login_gradient{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     z-index: 1;
     background: rgba(0, 0, 0, 0.452);
     background-image: linear-gradient(to top, 
@@ -44,33 +46,41 @@
     color: #fff;
     border: 1px solid #fff;
  }
-
- .login_input>button{
   
+ .input-field>button{
     background-color: #e50914;
-    
+    font-size: 1rem;
     font-weight: 600;
     color: #fff;
-    padding: 17px 25px;
+    padding: 14px 15px;
     border: none;
+    margin: .1rem 0s;
  }
- .login_input>button:hover{
+ .input-field>button:hover{
      background-color: #e50914;
  }
  .login_content{
   z-index: 1;
   color: #fff;
-  padding: 20px 100px;
+  padding: 20px;
   position: absolute;
-  top: 30%;
+  top: 19%;
+  right: 30vw;
+  left: 20vw;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: -70px;
+  
   
  
    
  }
  .login_content>h1{
      font-size: 3.214rem;
-     margin-bottom:20px;
+     margin-bottom:10px;
   
  }
  .login_content>h4{
@@ -92,6 +102,7 @@
      margin: 1rem 0;
      align-items: center;
      flex-wrap: wrap;
+   
 
     
  }
@@ -108,14 +119,73 @@
        color: #fff;
    }
 
-   /* 
-   .login_nav{
-    position: fixed;
-    height: 75px;
-    background: #111;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;   
-}
-   */
+  
+
+   @media (max-width:768px){
+ 
+    .login_content>h1{
+     font-size: 2.2rem;
+    }
+     .login_content>h4{
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.6; 
+    }
+   .login_content>h3{
+    font-size: 1.1rem;
+    font-weight: 300;
+     }
+     .input-field{
+        display: flex;
+        flex-direction: column;
+    }
+    .input-field>button{
+  
+        background-color: #e50914;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #fff;
+        padding: 15px 30px;
+        border: none;
+        margin-top: 1rem;
+     }
+   }
+
+
+
+ 
+  
+
+   @media (max-width:425px){
+ 
+    .login_content>h1{
+     font-size:1.8rem;
+    }
+     .login_content>h4{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6; 
+    }
+   .login_content>h3{
+    font-size: .9rem;
+    font-weight: 300;
+     }
+     .input-field{
+        display: flex;
+        flex-direction: column;
+    }
+    .input-field>button{
+  
+        background-color: #e50914;
+        font-size: .9rem;
+        font-weight: 600;
+        color: #fff;
+        padding: 10px 30px;
+        border: none;
+        margin-top: 1rem;
+     }
+   }
+
+
+
+ 
