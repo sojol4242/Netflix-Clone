@@ -64,3 +64,30 @@
     cursor: pointer;
 
 }
+
+
+@media (max-width:350px){
+    .signup{
+        position: absolute;
+       
+        top: 10%; 
+        left: -20%;  
+             
+    }
+    .signup-input{
+        width: 100%;
+    }
+    .signup-input>h4{
+        font-weight: 300;
+        font-size: .7rem;
+    }
+    .signup-input>h4>strong{
+      
+        font-size: .6rem;
+    
+    }
+ 
+  
+    
+   }
+
