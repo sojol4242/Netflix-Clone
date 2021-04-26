@@ -1,55 +1,39 @@
-import './App.css'
-import HomeScreen from './pages/HomeScreen';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route
-  } from "react-router-dom";
-import Login from './pages/Login';
-import { createContext, useState } from 'react';
-import PrivateRoute from './PrivateRoute';
+import "./App.css";
+import HomeScreen from "./pages/HomeScreen";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Login from "./pages/Login";
+import { createContext, useState } from "react";
+import PrivateRoute from "./PrivateRoute";
+import Profilescreen from "./pages/Profilescreen";
+ 
 export const UserContext = createContext();
 
-
- 
- 
- 
 function App() {
-  const [signedInUser,setSignedInUser]=useState({})
-   
-   
-    return ( 
+  const [signedInUser, setSignedInUser] = useState({});
 
-      <UserContext.Provider value={[signedInUser,setSignedInUser]}>
-        
-        <div className="app"> 
-      <Router>
-        
+  return (
+    <UserContext.Provider value={[signedInUser, setSignedInUser]}>
+      <div className="app">
+        <Router>
           <Switch>
-          
-           <Route exact path="/">
-               <Login/>    
-            </Route>         
-           <PrivateRoute path="/home">
-              <HomeScreen/>    
-            </PrivateRoute>    
-            <Route  path="/login">
-               <Login/>  
-            </Route>     
-          
+          <PrivateRoute exact path="/">
+              <HomeScreen />
+            </PrivateRoute>
+            <Route path="/login">
+              <Login />
+            </Route>
+            <PrivateRoute path="/home">
+              <HomeScreen />
+            </PrivateRoute>
+            <PrivateRoute path="/profile">
+              <Profilescreen/>
+            </PrivateRoute>
             
-          
-         </Switch>   
-     
-       
-      </Router>   
-          
+          </Switch>
+        </Router>
       </div>
-      
-
-      </UserContext.Provider>
-      
-    );
+    </UserContext.Provider>
+  );
 }
 
 export default App;
